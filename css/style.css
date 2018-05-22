@@ -1,0 +1,208 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+a{                     /* стилізація силок на веб-сторінці */
+	text-decoration: none;
+}
+
+li{                    /* стилізація списків на веб-сторінці */
+	text-decoration: none;
+	list-style: none;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;      /* стиль шрифта підтянемо з google fonts */
+}
+
+.logo{                                           /* стиль та розташування логотипу на головній сторінці */
+	background: #FFE4E1;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.graficlogo{                      /* створює адаптивність сторінки */
+	padding: 5px;
+	max-width: 100%;
+	box-sizing: border-box;   /* змінює розрахунок ширини і висоти елементів*/
+}
+
+nav{                              /* розміщення кнопок навігації */
+	margin: auto;
+	width: 500px;
+	height: 50px;
+}
+
+.topnav{
+	background-color: #fff;     /* колір, розмір шрифту і відступ зверху */
+	font-size: 14px;
+	margin-top: 40px;	
+}
+.topnav a{			     /* стилізація ссилок */
+	color: #000;
+	text-align: center;
+	padding: 15px 25px;
+	font-size: 16px;
+}
+
+.topnav a:hover{
+	border-bottom: 2px solid #FFE4E1;     /* підкреслення силок при наведенні */
+}
+
+.mw-100{
+	max-width: 100%;			/* клас, що відповідає за картинку на головній сторінці*/
+}
+
+.advantages_container{
+	display: flex;                          /*зроблю картинки на головній сторінці flex - container*/
+	justify-content: center;		/* вирівняю елементи по центру */
+}
+
+.advantages{
+	width: 70%;				/*задам вигляд елементам головної сторінки*/
+	display: flex;
+	justify-content: space-beetwen;		/*відступи між елемнтами*/
+	text-align: center;  			/*вирівняю блоки із текстом*/
+	flex-wrap: wrap;			/*перенос елементів на іншу строку*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.advantages__item{				/*класс для роботи із кожним елементом головної сторінки окремо*/
+	width: 32%;
+	padding-top: 40px
+}
+
+footer{
+	width: 100%;
+	height: auto;
+	background: #FFE4E1;
+	margin: 0 auto;				/* розатшування елементів в центрі футера */
+	text-align: center;
+	padding-top: 25px;
+}
+
+footer a{  					/*робота із ссилками*/
+	color: black;
+	font-size: 16px;
+	margin-left: 15px;
+}
+
+footer nav a:hover{
+	border-bottom: 3px solid white;
+}
+
+.social img{
+	margin-left: 20px;
+	margin-bottom: 20px;	
+}
+
+.social img:hover{
+	background: red;
+	border-radius: 40%;
+	
+}
+
+.gallery{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;		/*багатострочна розстановка блоків*/
+	margin-bottom: 50px;
+}
+
+.photo-item{
+	width: 25%;	
+}
+
+.photo-item img{
+	box-sizing: border-box;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.photo-item img:hover{
+	opacity: 1;
+}
+
+#map{
+	width: 100%;
+	height: 600px;
+}
+
+.form{
+	width: 50%;
+	margin: 50px auto;
+}
+
+.feedback-input{
+	color: black;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 22px;
+	background-color: white;
+	padding: 13px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	border: 0px solid transparent;
+	border-bottom: 1p solid black;
+}
+
+textarea{
+	width: 100%;
+	height: 150px;
+	resize: vertical;
+}
+
+.button-submit{
+	float: left;
+	width: 100%;
+	border: 0px solid transparent;
+	cursor: pointer;
+	background-color: #B22222;
+	color: white;
+	font-size: 18px;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	transition: all 0.3s;
+	margin-top: -4px;
+	font-weight: 300;
+}
+
+.button-submit:hover{
+	background-color: #008000;
+	color: white;
+	border: 1px solid white;
+}
+
+.ease{
+	width: 0;
+	height: 74px;
+	background-color: white;
+	transition: .3s ease;
+}
+
+.about{
+	width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}
+
+.about_container{
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: auto auto;    /*Виділяє колонки текту обмежені пробілами*/
+	grid-gap: 50px 100px;
+	
+}
+
+.about_container p{
+	margin-top: 50px;
+}
+
+.about_container img{
+	max-width: 100%;
+}

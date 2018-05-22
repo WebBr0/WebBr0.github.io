@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Eatit</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<div class="logo">
+			<a href="eatit.html"><img class="graficlogo" src="img/logo.png" alt="Logo"></a>
+		</div>
+		<nav>
+			<div class="topnav" id="myTopnav">                    <!-- створю кнопки на головній сторінці -->
+				<a href="eatit.html"> HOME </a>
+				<a href="screenshots.html"> SCREENSHOTS </a>
+				<a href="about.html"> ABOUT </a>
+				<a href="contact.html"> CONTACT </a>
+			
+			</div>
+		</nav>
+	</header>
+	<main class="about">
+			<h1>Fridge your hunger! Eat it!</h1>
+		<div class="about_container">
+
+		<div class="about_container_block">
+			<h2>WHO?</h2>
+			<p>We are a couple of application developers who really want to make people happier. Once we got together and created an instrument, which provide a coolinary emergency for all life situations.</p>
+		</div>
+
+		<div class="about_container_block">
+			<h2>WHAT?</h2>
+			<p>So how does it work? EASY! You just input what you want to eat, or what you have in your fridge and our application will fill you with hundreds of possible scenarios, like what you can cook NOW, or where can you buy THE CHEAPEST FOOD AROUND YOU and create some food masterpiece.</p>
+		</div>
+
+		<div class="about_container_block">
+			<h2>WHEN?</h2>
+			<p>It is only the beginning. The widest functionality in the world! Just purchase it once and become our FRIEND FOREVER, SO WE WILL NEVER LET YOU FEEL STARVING AGAIN!</p>
+
+		</div>
+
+		<div class="about_container_block">
+			<h2>HOW TO JOIN?</h2>
+			<p>Just tap any of the animals on the bottom of the page, they will lead you to the OFFICAL PAGE OF OUR APP and than you can join us:3</p>
+
+		</div>
+
+		</div>
+			<img src="img/about.jpg"  alt="">
+
+
+		<h1>LOCATION</h1>
+		<div id="map"></div>
+
+
+		
+	</main>
+
+	<footer>
+		<nav>
+				<a href="eatit.html"> HOME </a>
+				<a href="screenshots.html"> SCREENSHOTS </a>
+				<a href="about.html"> ABOUT </a>
+				<a href="contact.html"> CONTACT </a>
+			
+		</nav>
+
+		<div clas = "logo">
+			<a href="eatit.html"><img class="graficlogo" src="img/logo.png" alt=""></a>
+		</div>
+		<form class="social">
+			<a href="https://www.facebook.com/fridge.your.hunger/" target="_blank"><img src="img/social/1.png" alt=""></a>
+			<a href="https://www.facebook.com/fridge.your.hunger/" target="_blank"><img src="img/social/2.png" alt=""></a>
+			<a href="https://www.facebook.com/fridge.your.hunger/" target="_blank"><img src="img/social/3.png" alt=""></a>
+			<a href="https://www.facebook.com/fridge.your.hunger/" target="_blank"><img src="img/social/4.png" alt=""></a>
+			<a href="https://www.facebook.com/fridge.your.hunger/" target="_blank"><img src="img/social/5.png" alt=""></a>
+		</form>
+
+
+<script>
+      function initMap() {
+        var uluru = {lat: 49.8372299, lng: 24.0293724};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 8,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+</script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?&callback=initMap">
+</script>
+
+
+	</footer>
+
+
+</body>
+</html>
